@@ -1,56 +1,52 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl: 
+url: https://sora233.me
+date_format: "ordinal"
 title: 穹妹的小窝
-email: sora@sora233.me
-description: >- # this means to ignore newlines until "baseurl:"
-  Blog for Sora233 powered by Jekyll
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sora233.me" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: tsubasasora233
-github_username:  sora233
+author: Sora233 
 
-# Author
-author:
-  name:         Sora233
-  url:          https://sora233.me
-  email:        sora233.me
+# ---------------- #
+#   RSS / Email    #
+# ---------------- #
+subscribe_rss: /feed.xml
+email:
 
-    # Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
-
-permalink:    /:year-:month-:day/:title
-paginate:     5
-
-# Build settings
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
 markdown: kramdown
-remote_theme: chesterhow/tale
+kramdown:
+    input: GFM
+paginate: 9
+permalink: /:year/:month/:day/:title/
 plugins:
-  - jekyll-feed
-  - jekyll-remote-theme
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment
+# comments_provider: gitment
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+# disqus:
+    # username: mzlogin
+# https://imsun.net/posts/gitment-introduction/
+# gitment:
+#     owner: mzlogin
+#     repo: jekyll-theme-solid
+#     oauth:
+#         client_id: d2e1cbbd298958076462
+#         client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+# 在使用其它评论组件时可点击显示 Disqus
+# lazy_load_disqus : false
