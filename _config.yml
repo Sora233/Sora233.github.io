@@ -1,11 +1,12 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl: 
+baseurl:
 url: https://sora233.me
 date_format: "ordinal"
 title: 穹妹的小窝
-author: Sora233 
+author: Sora233
+github_username: sora233
 
 # ---------------- #
 #   RSS / Email    #
@@ -20,7 +21,7 @@ markdown: kramdown
 kramdown:
     input: GFM
 paginate: 9
-permalink: /:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title
 plugins:
     - jekyll-paginate
     - jekyll-sitemap
@@ -29,7 +30,13 @@ plugins:
 collections:
     wiki:
         output: true
-        permalink: /wiki/:path/
+        permalink: /wiki/:path
+    game:
+        output: true
+        permalink: /game/:path
+exclude: [.idea]
+    
+
 
 # ---------------- #
 #      Comments    #

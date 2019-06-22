@@ -6,14 +6,21 @@ keywords: Sora233
 permalink: /about/
 ---
 
-**Software Engineer at [SenseTime](https://sensetime.com)**
+**Software Engineer from Sichuan, Living in Beijing**
 
-Beijing, China \| Software Engineer
+*本Blog包含以下内容，请未满18岁者在父母陪同下观看：*
+- 吃土养生
+- 游戏成瘾
+- 麻将赌博（输赢高达5人民币元）
+- 二刺螈
+- 男の子
+
+*如有不适，请停止观看*
 
 *Contact:* `sora@sora233.me`
 
-*Social:*  [github](http://github.com/sora233) \| [blog](https://sora233.me)
+*Social:*  [github](http://github.com/sora233) \| [bilibili](https://space.bilibili.com/97505) \| [blog](https://sora233.me)
     
 ```ruby
-print("Hello World!")
+puts("Hello World!")
 ```

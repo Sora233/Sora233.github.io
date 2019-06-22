@@ -1,4 +1,6 @@
+<html>
 {% include header.html %}
+<body>
 <div class="container">
     {% include navigation.html %}
     <div class="main">
@@ -6,11 +8,11 @@
         {{ content }}
         {% if page.categories %}
         <div class="post_footer">
-          <p>Published on {{ page.date | date: "%b %d, %Y" }} in categories 
-          {% for cat in page.categories %}
-          <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
-          {% endfor %}
-          <p>
+            <p>Published on {{ page.date | date: "%b %d, %Y" }} in categories
+                {% for cat in page.categories %}
+                <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+                {% endfor %}
+            <p>
         </div>
         {% endif %}
         <ul class="prev_next">
@@ -31,4 +33,6 @@
         {% include comments.html %}
     </div>
 </div>
+</body>
 {% include footer.html %}
+</html>
