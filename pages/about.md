@@ -21,7 +21,7 @@ permalink: /about/
 
 *PlayStation ID:* `TsubasaSora233`
 
-*Social:*  [github](http://github.com/sora233) \| [bilibili](https://space.bilibili.com/97505) \| [blog](https://sora233.me)
+*Social:*  [github](http://github.com/sora233) \| [bilibili](https://space.bilibili.com/97505) \| [blog](https://github.sora233.me)
     
 ```ruby
 puts("Hello World!")
