@@ -40,10 +40,21 @@ exclude: [.idea]
 # ---------------- #
 #      Comments    #
 # ---------------- #
-comments_provider: gitment
+comments_provider: disqus
 gitment:
   owner: sora233-001
   repo: sora233-gitment
   oauth:
     client_id: 9cedf4c0d94a87ce8d3c
     client_secret: 125498df2ff2f112598e373738c3e2b91630190c
+
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      categories: 日常
+      description:
+      keywords:
+    posts:
+      categories: 日常
+      description:
+      keywords:
