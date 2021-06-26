@@ -29,4 +29,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem "dotenv"
 gem "rouge"
-gem "nokogiri", ">= 1.10.8"
+gem "nokogiri", ">= 1.11.4"
+gem "kramdown", ">= 2.3.1"
